@@ -7,14 +7,14 @@ import { ProductoService } from 'src/app/services/producto.service';
   styleUrls: ['./producto.component.css']
 })
 export class ProductoComponent implements OnInit {
-
+  public productos: any[] = [];
   constructor(private productoService: ProductoService) { }
 
   ngOnInit(): void {
     this.obtenerProductos();
   }
 
-  public async obtenerProductos(){
+  private async obtenerProductos(){
     try{
       const response =await this.productoService.obtenerProductos();
       console.log(response);
@@ -25,3 +25,5 @@ export class ProductoComponent implements OnInit {
   }
 
 }
+
+

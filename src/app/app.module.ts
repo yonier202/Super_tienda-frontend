@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ProductoComponent } from './components/producto/producto.component';
+import { ProductoComponent } from './components/tabla-producto/producto.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductoService } from './services/producto.service';
+import { ContenidoComponent } from './components/contenido/contenido.component';
+import { Producto1Component } from './components/producto1/producto1.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,10 @@ import { ProductoService } from './services/producto.service';
     HeaderComponent,
     FooterComponent,
     ProductoComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ContenidoComponent,
+    Producto1Component,
+
   ],
   imports: [
     BrowserModule,

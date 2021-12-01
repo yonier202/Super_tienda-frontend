@@ -11,6 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductoService } from './services/producto.service';
 import { ContenidoComponent } from './components/contenido/contenido.component';
 import { Producto1Component } from './components/producto1/producto1.component';
+import { ErrorComponent } from './components/error/error.component';
+import { FormularioProductoComponent } from './components/formulario-producto/formulario-producto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { Producto1Component } from './components/producto1/producto1.component';
     NotFoundComponent,
     ContenidoComponent,
     Producto1Component,
+    ErrorComponent,
+    FormularioProductoComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [ProductoService],
   bootstrap: [AppComponent]

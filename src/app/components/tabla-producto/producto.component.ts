@@ -14,6 +14,7 @@ export class ProductoComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.productos = await this.obtenerProductos();
+    localStorage.clear();
     console.log(this.productos);
     
   }
